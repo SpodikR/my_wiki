@@ -1,6 +1,10 @@
 from django.shortcuts import render
-from markdown2 import markdown
+from django import forms
 from . import util
+from  markdown2 import markdown
+from django.urls import reverse
+from django.http import HttpResponseRedirect
+import random
 
 
 def index(request):
